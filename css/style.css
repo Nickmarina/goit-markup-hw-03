@@ -1,7 +1,7 @@
 :root{
     --header-color: #212121;
     --paragraph-color: #757575;
-    --main-background: #E5E5E5;
+
     --sections-background: #2F303A;
     --selection-color: #2196F3;
     --white-color: #ffffff;
@@ -39,7 +39,6 @@ ul{
 }
 
 body{
-    background-color: var(--main-background);
     color: var(--headen-color);
     font-family: Roboto;
     font-style: normal;
@@ -56,12 +55,14 @@ a{
 
 /* навигация в head */
 
+.header{
+    background-color: var(--white-color);
+    border-bottom: 1px solid #ECECEC;;
+}
 .navigation{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--white-color);
-    border: 1px solid #ECECEC;
 }
 
 .main-page{
@@ -134,6 +135,8 @@ ul a{
 
 /* hero */
 .hero{
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-color: var(--sections-background);
     text-align: center;
     }
@@ -160,6 +163,10 @@ ul a{
 }
 
 /* блок с описанием преимуществ */
+
+.advantages-section{
+    padding-top: 94px;
+}
 
 .advantages-list{
     display: flex;
@@ -197,24 +204,34 @@ ul a{
 }
 
 /* секция "чем занимаемся" */
-.futures-list{
+
+.features-section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.features-list{
     display: flex;
     width: 270px;
 }
 
-.futures-list img{
+.features-list img{
     padding: 0;
     margin: 0;
 }
 
-.futures-list .item:not(:last-child){
+.features-list .item:not(:last-child){
     margin-right: 30px;
 }
 
 /* секция о команде */
+
+.command-section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: #F5F4FA;
+}
 .command-list{
     display: flex;
-    background-color: #F5F4FA;
 }
 
 .command-list .item:not(:last-child){
@@ -247,12 +264,13 @@ ul a{
 
 /* футер */
 .foot-section{
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--sections-background);
 }
 
 .foot-section .logo{
     display: block;
- /* padding-top: 60px; */
     margin-bottom: 20px;
 }
 
@@ -282,6 +300,10 @@ address .item{
 
 /* PORTFOLIO */
 
+.projects{
+    padding-top: 100px;
+    padding-bottom: 94px;
+}
 .projects h1{
     display: none;
 }
